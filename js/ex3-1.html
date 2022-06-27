@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS 조건문 실습</title>
+</head>
+<body>
+    <h1>JS 조건문(if) 실습</h1>
+    <p id="result">제 점수는요?</p>
+    <script type="text/javascript">
+        var x,y,z;
+        x = prompt("x 값을 입력하시오 : ");
+        y = prompt("y 값을 입력하시오 : ");
+        var op = prompt("연산자를 입력하시오 : ");
+        if(op=="+"){
+            z = x-(-y);
+        }
+        else if(op=='-'){
+            z = x-y;
+        }
+        else if(op=='*'){
+            z = x*y;
+        }
+        else if(op=='/'){
+            z = x/y;
+        }
+        else{
+            z = "값을 정상적으로 입력하세요";
+        }
+        document.write(x+op+y+'='+z)
+    </script>
+</body>
+</html>

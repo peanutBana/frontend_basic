@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS 실습 1</title>
+</head>
+<body>
+    <h1>당신의 이름은?</h1>
+    <p id="content">이름을 말해주세요.</p>
+    <input type="button" value="궁금하면 눌러라(새 창에 작성)" onclick="window.alert('홍길동');">
+    <input type="button" value="궁금하면 눌러라(document)내 content 위치에 작성" onclick="document.getElementById('content').innerHTML='홍길동';"><p>
+    <input type="button" value="궁금하면 눌러라(새 document에 작성)" onclick="document.write('홍길동');"><p>
+</body>
+</html>
